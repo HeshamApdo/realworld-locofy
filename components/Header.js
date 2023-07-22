@@ -1,8 +1,9 @@
+import Link from "next/link";
 const Header = ({ hamburger }) => {
   return (
     <header className="self-stretch bg-gray-white h-[98px] flex flex-row py-[22px] px-20 box-border items-center justify-center sticky w-full top-[0] [background:white] z-[2] text-center text-5xl text-primary-500 font-body-regular-600 lg:pl-10 lg:pr-10 lg:box-border md:pl-6 md:pr-6 md:box-border">
       <div className="flex-1 flex flex-row items-center justify-between">
-        <div className="flex flex-row items-center justify-center gap-[8px]">
+        <Link href="/" className="flex flex-row items-center justify-center gap-[8px]">
           <img className="relative w-11 h-11" alt="" src="/houseline.svg" />
           <div className="flex flex-col items-start justify-start">
             <div className="relative leading-[24px] font-semibold">REIS</div>
@@ -10,7 +11,7 @@ const Header = ({ hamburger }) => {
               Real State
             </div>
           </div>
-        </div>
+        </Link>
         <div className="flex flex-row items-center justify-end gap-[36px] text-sm text-primary-900 sm:flex">
           <div className="flex flex-row items-start justify-start gap-[30px] lg:hidden">
             <div className="relative leading-[22px]">HOME</div>
